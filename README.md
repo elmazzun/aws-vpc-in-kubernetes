@@ -27,22 +27,31 @@ resource mapping between the two.
 * [Resource mapping between AWS and Kubernetes](#resource-mapping-between-aws-and-kubernetes)
   * [VPC](#vpc)
   * [Availability Zone](#availability-zone)
-  * [Subnet](#subnet)
   * [Internet Gateway](#internet-gateway)
+  * [Subnet](#subnet)
   * [NAT Gateway](#nat-gateway)
   * [Route Table](#route-table)
   * [Elastic Load Balancer (ELB)](#elastic-load-balancer-elb)
   * [Identity Access and Management](#identity-access-and-management)
+* [Creation and Visualization](#creation-and-visualization)
+* [Disclaimer](#disclaimer)
+* [Contributions](#contributions)
 
 # Resource mapping between AWS and Kubernetes
 
 ## VPC
 
+The equivalent would be a **Kubernetes Cluster**, which should offer the same 
+degree of resource isolation as a PVC.
+
 ## Availability Zone
 
-## Subnet
-
 ## Internet Gateway
+
+The equivalent would be an **Ingress Controller**, which should be able to 
+handle ingress/egress traffic.
+
+## Subnet
 
 ## NAT Gateway
 
