@@ -29,43 +29,57 @@ and safe way...we'll see how much I want to devote to this project.
 
 # Content
 
-* [Why?](#why)
 * [Resource mapping between AWS and Kubernetes](#resource-mapping-between-aws-and-kubernetes)
-  * [VPC](#vpc)
-  * [Availability Zone](#availability-zone)
-  * [Internet Gateway](#internet-gateway)
-  * [Subnet](#subnet)
-  * [NAT Gateway](#nat-gateway)
-  * [Route Table](#route-table)
-  * [Elastic Load Balancer (ELB)](#elastic-load-balancer-elb)
-  * [Identity Access and Management](#identity-access-and-management)
+  * [Identities](#identities)
+    * [AWS account root user](#aws-account-root-user)
+    * [Identity and Access Management (IAM)](#identity-and-access-management-iam)
+  * [Networking](#networking)
+    * [VPC](#vpc)
+    * [Availability Zone](#availability-zone)
+    * [Internet Gateway](#internet-gateway)
+    * [Subnet](#subnet)
+    * [NAT Gateway](#nat-gateway)
+    * [Route Table](#route-table)
+    * [Elastic Load Balancer (ELB)](#elastic-load-balancer-elb)
 * [Creation and Visualization](#creation-and-visualization)
 * [Disclaimer](#disclaimer)
 * [Contributions](#contributions)
 
 # Resource mapping between AWS and Kubernetes
 
-## VPC
+## Identities
+
+### AWS account root user
+
+The equivalent would be a **ServiceAccount** bound to **admin** ClusterRole.
+
+### Identity and Access Management (IAM)
+
+IAM is used to create and manage Users, Groups and Roles.
+Unlike **RBAC** Kubernetes, which only handles Authorization, IAM handles both 
+Authentication and Authorization.
+
+## Networking
+
+### VPC
 
 The equivalent would be a **Kubernetes Cluster**, which should offer the same 
-degree of resource isolation as a PVC.
+degree of resources isolation as a PVC.
 
-## Availability Zone
+### Availability Zone
 
-## Internet Gateway
+### Internet Gateway
 
 The equivalent would be an **Ingress Controller**, which should be able to 
 handle ingress/egress traffic.
 
-## Subnet
+### Subnet
 
-## NAT Gateway
+### NAT Gateway
 
-## Route Table
+### Route Table
 
-## Elastic Load Balancer (ELB)
-
-## Identity Access and Management
+### Elastic Load Balancer (ELB)
 
 # Disclaimer
 
