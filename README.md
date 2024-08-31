@@ -21,6 +21,12 @@ In this way I will do an in-depth study of both AWS and Kubernetes, where
 in-depth knowledge of both will be necessary in order to create a consistent 
 resource mapping between the two.
 
+I created this repository instead of writing an article on some blog because I 
+was thinking of implementing what is described here with a minimum of code; 
+instead of being a purely mental exercise, it would be intriguing if this 
+became a local lab where anybody could experiment with AWS features in a free 
+and safe way...we'll see how much I want to devote to this project.
+
 # Content
 
 * [Why?](#why)
@@ -60,14 +66,6 @@ handle ingress/egress traffic.
 ## Elastic Load Balancer (ELB)
 
 ## Identity Access and Management
-
-# Creation and Visualization
-
-Another interesting challenge is *how to implement the creation and modification 
-of AWS resources when these are actually Kubernetes resources*; in addition, the 
-*visualization of these resources through a dashboard* is also to be implemented.
-
-How to represent the status of these resources and the interactions among them?
 
 # Disclaimer
 
